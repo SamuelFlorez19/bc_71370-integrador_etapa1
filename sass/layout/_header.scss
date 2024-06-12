@@ -1,0 +1,112 @@
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#menu {
+    display: none;
+} 
+
+/* -------------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------------- */
+
+.nav-bar{ 
+    background-color: $color-primario; 
+
+    &__nav-list{ 
+        display: none; /* va flex */
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        list-style-type: none;
+
+
+        @media (min-width: 576px) {  
+        display: flex; 
+        list-style-type: none; 
+        justify-content: center; 
+        } 
+    } 
+
+    &__nav-item{
+        text-align: center;
+        background-color: pink;
+    }
+
+    &__nav-link{
+        display: inline-block;
+        background-color: rgb(138, 75, 138);
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: black;
+
+    }
+}
+
+/* -------------------------------------------------------- */
+/* SEARCH BAR */
+/* -------------------------------------------------------- */
+
+.search-bar{
+    background-color: olivedrab;
+    display: flex;
+    justify-content: space-around;
+
+    &__logo-container{
+        width: 18.75em;
+        height: 5.75em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo{
+        font-size: $letra-l;
+    }
+    &__form-container{
+        padding: 1rem;
+        background-color:gold;
+        display: none; /* va flex */
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    
+    &__form-label{
+        background-color: greenyellow;
+    }
+    &__form-search{
+        background-color: deeppink;
+        width: 70%;
+    }
+    &__form-submit{
+        background-color: darkslategrey;
+        color: white;
+        padding: 1rem;
+    }
+    &__carrito-container{
+        flex: 0 0 3rem; /*  shorthand (grow shrihk basis) */
+        background-color: goldenrod;
+        
+    }
+    
+
+}
+
+
+
+/* -------------------------------------------------------- */
+/* MENÚ TOOGLE */
+/* -------------------------------------------------------- */
+
+.menu-toogle {
+    display: block;
+    background-color:black;
+}
