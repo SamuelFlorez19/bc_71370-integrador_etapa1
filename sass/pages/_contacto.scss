@@ -1,0 +1,54 @@
+h2{
+    color: $color-letra-negro;
+    font-weight: bold;
+    font-size: $letra-m;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: $color-secundario;
+    border: 1px solid $color-primario;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    &__header,
+    &__field{
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-size: $letra-l;
+        margin-bottom: 10px;
+
+    }
+    &__description{
+        font-size: $letra-s;
+        color: $color-letra-gris;
+    }
+    &__label{
+        display: block;
+        margin-bottom: 10px;
+        font-size: $letra-s;
+        color: $color-letra-negro;
+    }
+    &__input,
+    &__textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: $letra-s;
+        border: 1px solid $color-primario;
+        border-radius: 5px;
+    }
+    &__submit{
+        background-color: $color-primario;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__submit:hover{
+        background-color: $color-terciario;
+        color: $color-letra-negro;
+        text-decoration: underline;
+    }
+}
