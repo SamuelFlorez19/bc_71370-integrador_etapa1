@@ -1,0 +1,67 @@
+.nosotros{
+    max-width: 100%;
+    padding: 1rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__description,
+    &__nuestra-historia,
+    &__nuestros-valores,
+    &__nuestro-equipo{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        background-color: $color-terciario;
+        border-radius: 10px;
+        padding: 2rem 1.8rem;
+    }
+
+
+    
+    &__title-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $letra-l;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: $color-letra-negro;
+    }
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-size: $letra-m;
+        margin-bottom: 1rem;
+    }
+
+    &__valores{
+        list-style: square;
+    }
+    &__image-container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 1rem;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    &__text-equipo{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+ul{
+    list-style: none;
+}
+p{
+    margin-bottom: 10px;
+}
+span{
+    font-weight: bold;
+}

@@ -7,7 +7,117 @@
   </head>
   <body>
     
-    <h1>Nosotros</h1>
+    <header class="main-header">
+      <input type="checkbox" id="menu">
+
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="././index.html" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="views/contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav> <!--? .nav-bar -->
+
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <h1 class="search-bar__logo">Crown Jewels</h1>
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label">Buscar</label>
+          <input type="search" class="search-bar__form-search" id="busqueda"></input>
+          <input type="submit" class="search-bar__form-submit" value="Buscar"></input>
+        </form>
+        <div class="search-bar__carrito-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
+      </div><!--? .search-bar -->
+    </header><!-- ?.main-header -->
+
+    <main>
+      <section class="nosotros">
+        <div class="nosotros__conatiner">
+          <div class="nosotros__description">
+            <h2 class="nosotros__title-principal">Nosotros</h2>
+            <p>Somos una joyería familiar con más de 20 años de experiencia en el mercado. Nuestra pasión es crear piezas únicas y exclusivas que reflejen la personalidad y el estilo de cada cliente.</p>
+            <div class="nosotros__image-container">
+              <img class="nosotros__img" src="/img/familia-joyera.jpg" alt="Foto de la familia propietaria de la joyería">
+            </div>
+          </div>
+
+          <div class="nosotros__nuestra-historia">
+            <h3 class="nosotros__title">Nuestra historia</h3>
+            
+              <p>Nuestra historia comenzó en 1995 cuando <span>Samuel Florez</span>, apasionado por la belleza de las gemas y el arte de la joyería, decidió abrir las puertas de nuestra primera tienda. Desde entonces, hemos dedicado cada día a seleccionar las piedras más preciosas y a crear piezas únicas que reflejen la excelencia y el buen gusto.</p>
+        
+              <p>Con el tiempo, nuestro compromiso con  la calidad y el servicio al cliente nos ha   permitido crecer y ganarnos la confianza  de nuestra comunidad. Cada joya que sale   de nuestras manos lleva consigo la esencia  de nuestro trabajo meticuloso y nuestra  pasión por el detalle.
+              </p>
+                
+              <p>Hoy en día, nos enorgullece ser  reconocidos como una de las joyerías más   distinguidas de la región. Continuamos  innovando y buscando nuevas formas de  sorprender a nuestros clientes,  manteniendo siempre los valores que nos  han hecho llegar hasta aquí: integridad,   elegancia y un servicio excepcional.
+              </p>
+                
+              <p>Nuestra misión sigue siendo la misma   que en nuestros inicios: hacer que cada   cliente se sienta especial, ofreciéndoles   joyas que no solo adornan, sino que   también cuentan historias y perduran en el  tiempo. Agradecemos profundamente a  quienes nos han acompañado en este viaje y   esperamos seguir siendo su elección de  confianza en el mundo de la alta joyería.</p>
+            
+            
+          </div>
+
+          <div class="nosotros__nuestros-valores">
+            <h3 class="nosotros__title">Nuestros valores</h2>
+              <ul class="nosotros__valores">
+                <li><span>Calidad:</span> Nos esforzamos por ofrecer piezas de alta calidad y duraderas.</li>
+                <li><span>Originalidad:</span> Creamos diseños únicos y exclusivos que reflejan la personalidad de cada cliente.</li>
+                <li><span>Servicio:  </span> Nos comprometemos a brindar un servicio personalizado y atento a cada cliente.</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">  <!--? Footer  -->
+      <div class="footer__container">
+          <div class="footer__column">
+            <h3 class="footer__title">¿Quieres recibir informacion de nuevas colecciones, categorias, productos y más?</h3>
+            <p class="footer__text">SUSCRIBETE A NUESTRO NEWSLETTER</p>
+            <form class="footer__form">
+              <input type="email" placeholder="Correo electrónico" class="footer__input">
+              <button type="submit" class="footer__button">Suscribirse</button>
+            </form>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Redes sociales:</h3>
+            <ul class="footer__list">
+              <!-- ! Facebook -->
+              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link"> <svg class="footer__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a></li> <!-- ! .Facebook -->
+  
+              <!-- ! Instagram -->
+              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link"><svg class="footer__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+              <!-- !  .Instagram -->
+  
+              <!-- !Twiter -->
+              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link"> <svg class="footer__twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg></a></li>
+              <!-- ! .Twitter -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__text-copyright">&copy; 2024 Crown Jewels. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer> <!-- ? .Footer --> 
+
 
 
     <script type="module" src="/main.js"></script>
