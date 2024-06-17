@@ -9,8 +9,11 @@
     justify-content: center;
     align-items: center;
     height: 60vh; 
-    width: 100vw; 
+    width: 97vw; 
     background-color: $color-fondo;
+    @media (min-width: 768px) {
+        height: 80vh;
+    }
 }
 
 .main-search{

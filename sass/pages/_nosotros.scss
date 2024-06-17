@@ -37,6 +37,11 @@
 
     &__valores{
         list-style: square;
+        @media (min-width: 768px) {
+            &{
+                display: flex;
+            }
+        }
     }
     &__image-container{
         display: flex;
@@ -58,6 +63,14 @@
 
 ul{
     list-style: none;
+}
+li{
+    @media (min-width: 768px) {
+        &{
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
 }
 p{
     margin-bottom: 10px;
