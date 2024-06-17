@@ -30,7 +30,7 @@
 
 .nav-bar{ 
     background-color: $color-primario;
-    display: flex;
+    display: none; /* va flex para desktop */
     width: 100%;
     justify-content: center;
 
@@ -94,7 +94,7 @@
 /* -------------------------------------------------------- */
 
 .menu-toogle {
-    display: block;
+    display: block; /* none para desktop */
     background-color: red;
     flex: 0 0 3rem;
     cursor: pointer;
@@ -103,7 +103,7 @@
     &__label {
         display: block;
         height: 100% ;
-        background-color: rgb(129, 79, 175);
+        background-color: $color-letra-negro;
     }
 
     &__top-bread, 
@@ -114,7 +114,7 @@
         position: absolute;
         left: 0.5rem;
         right: 0.5rem;
-        background-color: rgb(0, 255, 247);
+        background-color: $color-letra-negro;
 
     }
 
