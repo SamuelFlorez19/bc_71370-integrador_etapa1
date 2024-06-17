@@ -130,7 +130,11 @@
             height: 2rem;
             width: 40rem;
             padding: 0 1rem;
-            
+            @media (min-width: 768px) {
+                &{
+                    
+                }
+            }
         }
         &__form-submit{
             background-color: $color-terciario;
@@ -140,6 +144,36 @@
             
 
         }
+        }
+        &__button{
+            @media (min-width: 768px) {
+                &{
+                    padding:8px 20px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    border: 0;
+                    background-color: white;
+                    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    font-size: $letra-xs;
+                    transition: all 0.5s ease;
+                }
+                &:hover{
+                    letter-spacing: 3px;
+                    background-color: $color-primario;
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: $color-primario 0px 7px 29px 0px;
+                }
+                &:active{
+                    letter-spacing: 3px;
+                    background-color: $color-primario;
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: $color-primario 0px 0px 0px 0px;
+                    transform: translateY(10px);
+                    transition: 100ms;
+                }
+            }
         }
     }
 
