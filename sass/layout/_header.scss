@@ -42,7 +42,6 @@
         &{
             display: flex;
             flex-direction: row;
-            
         }
     }
 
@@ -72,6 +71,11 @@
         color: $color-secundario;
         text-decoration: none;
         transition: color 0.3s ease;
+        &:hover{
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
     }
     &__nav-link:hover{
         color: $color-letra-gris;
@@ -130,11 +134,7 @@
             height: 2rem;
             width: 40rem;
             padding: 0 1rem;
-            @media (min-width: 768px) {
-                &{
-                    
-                }
-            }
+            
         }
         &__form-submit{
             background-color: $color-terciario;

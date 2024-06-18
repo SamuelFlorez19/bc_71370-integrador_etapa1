@@ -19,6 +19,7 @@
     margin-top: 1rem;
     background-color: $color-secundario;
     border-radius: 2rem;
+    transition: 0.5s ease-out;
     
     
     
@@ -85,3 +86,18 @@
     }
 }
 
+.card:hover{
+    border-color: $color-primario;
+    transform: translate(0%, -5%);
+    opacity: 1;
+    box-shadow: 0 6px 8px rgba(172, 121, 144, 0.574), 0 2px 4px rgba(0,0,0,0.54);
+    border:1px solid $color-primario;
+}
+
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

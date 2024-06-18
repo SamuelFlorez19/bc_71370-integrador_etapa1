@@ -12,7 +12,8 @@
     width: 97vw; 
     background-color: $color-fondo;
     @media (min-width: 768px) {
-        height: 80vh;
+        height: 95vh;
+        margin-top: -3.8rem;
     }
 }
 

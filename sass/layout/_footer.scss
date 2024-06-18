@@ -39,14 +39,6 @@
         color: $color-letra-negro;
         border-radius: 10px;
     }
-    &__button {
-        padding: 10px 20px;
-        border: none;
-        background-color: $color-primario;
-        color: #fff;
-        cursor: pointer;
-        border-radius: 10px;
-    }
     &__list{
         list-style: none;
         padding: 0;
@@ -57,6 +49,11 @@
     &__list-item{
 
         margin-right: 10px;
+        @media (min-width: 768px) {
+            &{
+                width: 20%;
+            }
+        }
     }
     &__link {
         color: #fff;
