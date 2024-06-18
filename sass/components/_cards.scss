@@ -1,3 +1,23 @@
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-letra-gris;
+    &__header{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-letra-negro;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: $color-terciario;
+    }
+}
+
+
+
 .cards-container{
     margin-top: 3rem;
     padding: 2rem 1rem;
@@ -94,10 +114,3 @@
     border:1px solid $color-primario;
 }
 
-.section-cards{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
